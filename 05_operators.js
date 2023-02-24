@@ -60,11 +60,6 @@ console.log(marks <= 35); //Less than Equal --> False
 
 
 
-
-
-
-
-
 var marks = 70;
 var result = marks >=60 ? "Allow for interview" : "Don't Allow";
 console.log(result);
