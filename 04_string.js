@@ -48,10 +48,15 @@ console.log("Slice result from Index 5 to 12 is:-->",sliceResult);
 console.log(greet.slice(2,5));
 
 console.log("split() Method");
-var greet = "Good Morning";
-var splitResult = greet.split("")
+var greet = "Good Morning my dear friend";
+var splitResult = greet.split(" ")
 console.log(splitResult);
+console.log("Total Words :-",splitResult.length);
 
+var myFriendList =  "Billgates, Stew Job, Elon Musk, Ratan Tata, Sundar Pichai, Satya Nadella, Narayan Murti, Nandan Nilekani, Larry Page, Surgey Brain, Tim Cook";
+var frdList = myFriendList.split(",");
+console.log("Total words: ", frdList);
+console.log("Total Words :-",frdList.length);
 
 
 
