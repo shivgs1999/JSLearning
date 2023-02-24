@@ -6,7 +6,6 @@ console.log("My full Name is: Shivam Suradkar");
 }
 showFullName();  //function call or function Invoke
 
-
 //----------------------------------------------------------
 // function with Arguments and No return value
 function showAge(age){

@@ -1,5 +1,5 @@
-console.log("************************* Stem 01 *************************");
-console.log("********** function with No Arguments and No return value ***********");
+console.log("--------------------------- Stem 01 ---------------------------");
+console.log("---------- function with No Arguments and No return value ----------");
 // function with No Arguments and No return value
 function myFevCompany() {
 }
@@ -21,8 +21,8 @@ var collegeName = "SP College Pune";
 
 
 
-console.log("************************* Stem 02 *************************");
-console.log("********** function personalDetails ***********");
+console.log("--------------------------- Stem 02 ---------------------------");
+console.log("---------------- function personalDetails ----------------");
 function personalDetails(value1,value2,value3){
     console.log("My First Name is:",value1,"My Last NAme is:",value2,"My College NAme is:",value3);
 
@@ -31,8 +31,8 @@ personalDetails(firstName,lastName,collegeName);
 
 //=============================================================================
 
-console.log("************************* Stem 03 *************************");
-console.log("********** Swapping Two Values ***********");
+console.log("--------------------------- Stem 03 ---------------------------");
+console.log("---------------- Swapping Two Values ----------------");
 
 var str1 = "Anushka";
 var str2 = "Virat";
@@ -52,8 +52,8 @@ swapValueDude(num1,num2);
 
 //=============================================================================
 
-console.log("************************* Stem 04 *************************");
-console.log("********** WAF with 3 Arguments ***********");
+console.log("--------------------------- Stem 04 ---------------------------");
+console.log("---------------- WAF with 3 Arguments ----------------");
 
 var num1 = 10.23;
 var num2 = 600;
