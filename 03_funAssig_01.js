@@ -4,24 +4,21 @@ console.log("---------- function with No Arguments and No return value ---------
 function myFevCompany() {
 }
 myFevCompany(); //function call or function Invoke
-console.log(" Function1 with No Arguments and No return Value");
+console.log(" Function 1 with No Arguments and No return Value");
 
 // function with No Arguments and No return value
 function showFullName() {
    
 }
 showFullName(); //function call or function Invoke
-console.log(" Function2 with No Arguments and No return Value");
+console.log(" Function 2 with No Arguments and No return Value");
 
 //==============================================================================
-
+console.log("--------------------------- Stem 02 ---------------------------");
 var firstName = "Shivam";
 var lastName = "Suradkar";
 var collegeName = "SP College Pune"; 
 
-
-
-console.log("--------------------------- Stem 02 ---------------------------");
 console.log("---------------- function personalDetails ----------------");
 function personalDetails(value1,value2,value3){
     console.log("My First Name is:",value1,"My Last NAme is:",value2,"My College NAme is:",value3);
