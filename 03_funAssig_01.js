@@ -60,7 +60,8 @@ var str1 = "Hellow";
 var str2 = "Good";
 var str3 = "Morning";
 function addThreeValues(value1,value2,value3) {
-    console.log("Three Arguments:-",value1,value2,value3);
+    var addition = value1 + value2 + value3;
+    console.log(`Addition Of Three Values is : "${addition}" `);
 }
 addThreeValues(num1,num2,num3); 
 addThreeValues(str1,str2,str3);
