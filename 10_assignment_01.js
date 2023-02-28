@@ -1,6 +1,6 @@
 console.log(`------------------------ Step_01 ------------------------`);
 function voteEligibility(age) {
-    if (age <= 0 || age > 100 || age == undefined || age == null) {
+    if (age <= 0 || age > 100 || age == undefined || age == null || isNaN(age) {
        var result =  console.log(`This is not Valid Age : "${age}" Please Provide Valid value`);
         return result;
     }
@@ -19,13 +19,14 @@ voteEligibility(8);
 voteEligibility(-10);
 voteEligibility(200);
 voteEligibility(0);
+voteEligibility(NaN);
 voteEligibility(undefined);
 voteEligibility(null);
 
 console.log(`------------------------ Step_02 ------------------------`);
 
 function gradeCalculation(marks) {
-    if (marks<=0 || marks > 100 || (typeof marks!= "number") || marks == undefined || marks == null || marks == NaN) {
+    if (marks<=0 || marks > 100 || (typeof marks!= "number") || marks == undefined || marks == null || isNaN(marks)) {
         var result = console.log(`Sorry Given Marks "${marks}" is not Valid,Please Provide Valid Marks`);
         return result;
     }
