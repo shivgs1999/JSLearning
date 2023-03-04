@@ -27,7 +27,7 @@ console.log(`-----------------Infinite Loop---------------`);
   // console.log(index);  
  // }
 
-
+ 
 //  for (let index = 10; index >= 0; index = index++) {   
 //     console.log(index);  
 //  }
