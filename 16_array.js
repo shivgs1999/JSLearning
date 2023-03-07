@@ -116,3 +116,4 @@ console.log("=====splice() to replace one elements ====================");
 var arrayOfNumbers = [ 10, 20, 25, 15, 40, 45];
 arrayOfNumbers.splice(2, 2 ,50,60);
 console.log(arrayOfNumbers);
+
