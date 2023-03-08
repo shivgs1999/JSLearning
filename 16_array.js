@@ -13,7 +13,7 @@ console.table(arrayOfNumAndString);
 
 // array can store duplicate Elements
 
-// Total Numbers Of Elements
+// To Count Total Numbers Of Elements in the Array
 const totalArrayElements =  arrayOfNumbers.length;
 console.log(`Total elements available in array is: ${totalArrayElements}`);
 
@@ -33,9 +33,9 @@ const indexOf100 = arrayOfNumbers.indexOf(100);
 console.log(`Index of 100 element is: ${indexOf100} `); 
 
 // we can access the array value of particular index as shown below instead of indexOf method
-var arrayOfNumbers = [ 10, 20, 25, 15, 30, 5];
-const valueAtIndex2 = arrayOfNumbers[2];
-console.log(`Value at index 2 is: ${valueAtIndex2}`);
+var arrayOfNumbers = [ 10, 20, 25, 15, 30, 50];
+const valueAtIndex5 = arrayOfNumbers[5];
+console.log(`Value at index 5 is: ${valueAtIndex5}`);
 
 // Update the particular index too
 arrayOfNumbers[3] = 35;
@@ -100,14 +100,8 @@ var arrayOfNumbers = [ 10, 20, 25, 15, 40, 45];
 arrayOfNumbers.splice( 2, 0, 22);
 console.log(arrayOfNumbers);
 
-console.log("=====splice() to insert one elements without replacing existing element ====================");
-var arrayOfNumbers = [ 10, 20, 25, 15, 40, 45];
-// 5, 35, 55
-arrayOfNumbers.splice( 4, 0, 5, 35, 55);
-console.log(arrayOfNumbers);
-
-//to Replace one elements without replacing existing element
-console.log("=====splice() to insert one elements without replacing existing element ====================");
+//to Replace many elements without replacing existing element
+console.log("=====splice() to insert many elements without replacing existing element ====================");
 var arrayOfNumbers = [ 10, 20, 25, 15, 40, 45];
 arrayOfNumbers.splice( 4, 0, 5, 35, 55);
 console.log(arrayOfNumbers);
@@ -116,4 +110,25 @@ console.log("=====splice() to replace one elements ====================");
 var arrayOfNumbers = [ 10, 20, 25, 15, 40, 45];
 arrayOfNumbers.splice(2, 2 ,50,60);
 console.log(arrayOfNumbers);
+
+console.log("===== Traversing  ====================");
+console.log("===== Traversing  ====================");
+var arrayOfNumbers = [ 10, 20, 25, 15, 40, 45, 60, 40, 30, 22, 26 ];
+var sum = 0; // 10
+for (let index = 0; index < arrayOfNumbers.length; index++) {//1
+    const element = arrayOfNumbers[index];
+   sum = sum + element;// sum = 0 + 20
+    // console.log(element);
+}
+console.log(`Sum of an Array element is: ${sum}`);
+var sum = 0; // 10
+for (let index = 0; index < arrayOfNumbers.length; index++) {//1
+    const element = arrayOfNumbers[index];
+   sum = sum + element;// sum = 0 + 20
+    // console.log(element);
+}
+console.log(`Sum of an Array element is: ${sum}`);
+
+
+
 
