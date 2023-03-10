@@ -21,7 +21,7 @@ var result = maleMarriageEligibility("Male",undefined,"Shivam");
 console.log(result);
 
 
-console.log(`------------ How To Handel Unexpected Conditions ------------`);
+console.log(`------------ How To Handel Unexpected Conditions unhappy Path ------------`);
 
 function gradeCalculation(marks){
     // if marks is 0 or less than 0 or greater than 100 or not in valid number format 
