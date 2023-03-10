@@ -106,7 +106,7 @@ var arrayOfNumbers = [ 10, 20, 25, 15, 40, 45];
 arrayOfNumbers.splice( 4, 0, 5, 35, 55);
 console.log(arrayOfNumbers);
 
-console.log("=====splice() to replace one elements ====================");
+console.log("=====splice() to replace elements ====================");
 var arrayOfNumbers = [ 10, 20, 25, 15, 40, 45];
 arrayOfNumbers.splice(2, 2 ,50,60);
 console.log(arrayOfNumbers);

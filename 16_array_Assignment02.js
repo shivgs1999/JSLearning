@@ -15,6 +15,7 @@ console.log(`~~~~~~~~~~~~~~~~~~~ QUE 3 ~~~~~~~~~~~~~~~~~~~`);
 const lastThirdElement = arrayNumbers[arrayNumbers.length-3]
 console.log(`Last third Element of the Array is: "${lastThirdElement}"`);
 
+ // const arrayNumbers =[20,31,40,25,23,11,29,9,60,2,11]
 console.log(`~~~~~~~~~~~~~~~~~~~ QUE 4 ~~~~~~~~~~~~~~~~~~~`);
 let evenElements=[];
 for (let index = 0; index < arrayNumbers.length; index++) {
