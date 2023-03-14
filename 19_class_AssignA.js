@@ -41,28 +41,46 @@ class College {
         this.isAutonomous = isAutonomous;
         this.gradeByNAAC = gradeByNAAC;
     }
+    showDetails(){
+      console.log(`College Details: ${this.clgName} ${this.location} ${this.stream} ${this.isAutonomous} ${this.gradeByNAAC} `);
+  }
 }
 const spCollege = new College ("S P College, Pune", "Tilak Road", "Science", "Yes", "A++")
-console.log(spCollege);
+spCollege.showDetails();
 const fcCollege = new College ("F C College, Pune", "FC Road", "Arts", "Yes", "A+")
-console.log(fcCollege);
+fcCollege.showDetails();
 const gCollege = new College ("Garware College, Pune", "Karve Road", "Commerce", "No", "B+")
-console.log(gCollege);
+gCollege.showDetails();
 const wCollege = new College ("Wadiya College, Pune", "Station Road", "Science", "No", "A++")
-console.log(wCollege);
+wCollege.showDetails();
 
 console.error(`~~~~~~~~~~~~~~~~~~~~~~ Traverse Function with one Argument using For in  ~~~~~~~~~~~~~~~~~~~~~~~~`);
 
-function traverseObject(value) {
-    for (const key in College) {
-        if (Object.hasOwnProperty.call(College, key)) {
-            const element = College[key];
-            console.log(`${key},${element}`);
-            
-        }
-    }
+
+function traverseObject(CollegeDetails){
+  //console.log(College);
+ 
+  for (const key in CollegeDetails) {
+ 
+     if (Object.hasOwnProperty.call(CollegeDetails, key)) {
+         const element = CollegeDetails[key];
+         console.log(`College-${key}: ${element}`);
+         //console.log(`${element.name}, ${element.city}, ${element.id}, ${element.course}`);
+         
+     }
+      
+     }
+
+ 
 }
-traverseObject();
+traverseObject(spCollege);
+console.log("--------------------------------------------------------------------------------------------------");
+traverseObject(fcCollege);
+console.log("--------------------------------------------------------------------------------------------------");
+traverseObject(gCollege);
+console.log("--------------------------------------------------------------------------------------------------");
+traverseObject(wCollege);
+
 
 console.error(`~~~~~~~~~~~~~~~~~~~~~~ To Check Weather 11 is Prime Or not  ~~~~~~~~~~~~~~~~~~~~~~~~`);
 // program to check if a number is prime or not
