@@ -31,6 +31,8 @@ mapOfBank.set(65846565458, kotakBank);
 mapOfBank.set(62514897564, hdfcBank);
 mapOfBank.set(2564827564, punjabBank);
 
+// console.log(mapOfBank);
+
 const keyOfMap = mapOfBank.keys();
 for (const key of keyOfMap) {
     const element = mapOfBank.get(key)
