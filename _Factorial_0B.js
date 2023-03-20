@@ -1,12 +1,22 @@
+function factorialOfNumber(num) {
+  let factorial = 1;
+  for (let index = num; index >= 1; index--) {
+    factorial = factorial * index
+  }
+  return factorial;
+}
+let result = factorialOfNumber(5);
+console.log(result);
+
+
 function factorialOfWordsCount(str) {
   if (str == null || str == undefined || (isNaN(str) && typeof str == "number")) 
   {
     console.log(`Given String "${str}" is not valid`);
   } else {
-    let count = 0;
     let factorial = 1;
     let words = str.split(" ");
-    count = count + words.length;
+    let count = words.length;
     for (let index = count; index >= 1; index--) {
       factorial = factorial * index;
     }
@@ -27,3 +37,9 @@ factorialOfWordsCount(NaN);
 //console.log(result);
 factorialOfWordsCount("");
 //console.log(result);
+
+
+
+
+
+
