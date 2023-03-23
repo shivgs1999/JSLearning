@@ -31,12 +31,11 @@ mapOfEmployee.set(77, empMonika);
 mapOfEmployee.set(88, empViny);
 mapOfEmployee.set(99, empMahi);
 
-console.table(mapOfEmployee);
+// console.table(mapOfEmployee);
 
-mapOfEmployee.forEach((key, value) => {
+mapOfEmployee.forEach((value,key) => {
     // console.log(key,"===>",value);
-    // console.log(`${key} ===> Name: ${value.empName}, Dept: ${value.empDept}, Company: ${value.empCompany}, Salary: ${value.empSalary}`);
-     console.log(`${value} ===> Name: ${key.empName}, Dept: ${key.empDept}, Company: ${key.empCompany}, Salary: ${key.empSalary}`);
+     console.log(`${key} ===> Name: ${value.empName}, Dept: ${value.empDept}, Company: ${value.empCompany}, Salary: ${value.empSalary}`);
 });
 
 
