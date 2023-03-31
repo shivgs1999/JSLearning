@@ -9,7 +9,7 @@ console.log(elementProfile.innerHTML);
 
 console.log("====== API getElementsByClassName() to select element class Name  =====");
 const elementLi = document.getElementsByClassName("liItem");
-console.log(elementLi[1].innerHTML);
+console.log(elementLi[1]);
 
 console.log("====== API querySelector() to select element by id  =====");
 const elementProfileByQuery = document.querySelector("#profile");
@@ -23,7 +23,7 @@ console.log("====== API querySelectorAll() to select element by class  =====");
 const elementsByQuery = document.querySelectorAll(".liItem");
 console.log(elementsByQuery);
 
-elementsByQuery[3].innerHTML = "Oracle Database";
+elementsByQuery[3] = "Oracle Database";
 console.log(elementsByQuery[3]);
 
 console.log("====== Changing the attribute of an element =====");
@@ -41,5 +41,59 @@ const elementDivProject = document.querySelector("#divProject");
 const elementProject = document.querySelector("#project");
 elementDivProject.removeChild(elementProject);
 
+console.log("====== Adding Element =====");
+const elementDiv = document.querySelector("#divProject");
+const elementP = document.createElement("p");
+elementDiv.appendChild(elementP);
+const elementText = document.createTextNode("Team Size - 7");
+elementP.appendChild(elementText);
 
 
+const elementAddress = document.querySelector("#address");
+elementAddress.addEventListener("click", ()=> {
+    console.log("Listening click event.....");
+     //alert("You have clicked on Address");
+    const inputValue = prompt("This is the Title", "Default Value");
+    console.log(inputValue);
+});
+
+// elementAddress.addEventListener("mouseover", ()=> {
+//     console.log("Mouse Over event.....");
+//     elementAddress.style.color = "pink";
+// });
+
+function show() {
+    console.log(`Click Event.....`);
+}
+
+const isEvenButton = document.querySelector("#isEvenButton");
+isEvenButton.addEventListener("click", () => {
+     const inputValue = prompt("Please Enter Number To Check", 0);
+     console.log(inputValue);
+     const result = inputValue%2 == 0 ? true : false;
+     if (result != "Number" || result == undefined || result == null || result == "string" ) {
+        return alert("Given Number is Not A Number")
+        
+     }
+     if (result) {
+        alert("Given Number is Even")
+     } else{
+        alert("Given Number is Odd")
+     }
+}); 
+
+
+const isPrimaryNumber = document.querySelector("#isPrimeNumber");
+isPrimeNumber.addEventListener("click", () => {
+const inputValues = prompt("Enter the Number", 0);
+function primeNo(num) {
+    for (let index = 2; index < num; index++) {
+      if (num % index == 0 ) {
+         return `${num} is not a prime Number`;
+      }    
+    } 
+    return `${num} is  a prime Number`;
+ }
+ let result = primeNo(inputValues);
+ console.log(result);
+});  

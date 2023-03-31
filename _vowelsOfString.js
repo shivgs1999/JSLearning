@@ -37,3 +37,4 @@ var result = lastWordCharCount("I Am Angular Developer");
 console.log(result);
 var result = lastWordCharCount("Hard work and commitment is the key of success");
 console.log(result);
+

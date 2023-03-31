@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Events </title>
+    <h1> This is Show event Handle </h1>
+</head>
+<body id="body">
+    <h2 id="heading2"> JavaScript DOM Events Types </h2>
+    <ul id="ulList">
+        <li onclick="show()"> Click </li>
+        <li id="list2"> doubleclick </li>
+        <li id="list3"> mouseover </li>
+        <li id="list4"> mouseout </li>
+        <li id="list5"> mousemove </li>
+    </ul>
+    <div id="divSection">
+
+    </div>
+
+
+
+    <script>
+        function show() {
+            console.log("Hey you clicked me!");
+        }
+
+        const list2 = document.querySelector("#list2");
+        list2.addEventListener("doubleclick", function () {
+            console.log("Hello you Double Clicked on me!");
+        })
+        
+        const list3 = document.querySelector("#list3");
+        list2.addEventListener("mouseover", function () {
+            console.log("Hello you Mouse Over on me!");
+        })
+
+        const list4 = document.querySelector("#list4");
+        list4.addEventListener("mouseout", () => {
+            console.log("Hello you mouse out on me!");
+        })
+
+        const list5 = document.querySelector("#list5");
+        list4.addEventListener("mousemove", () => {
+            console.log("Hello you mouse Move on me!");
+        })
+
+        // Creating Element inside Div Tag
+        const elementDiv = document.querySelector("#divSection"); // locating or Accessing Div Element
+        const elementP = document.createElement("p"); //  Creating Element para
+        elementP.style.color = "red";  // Providing CSS Style to P
+        elementP.style.color = "50px"; // Providing CSS Style to P
+        const elementText = document.createTextNode("I am Leaf Node"); // Text Node is Created
+        elementP.appendChild(elementText); // Append Leaf Node to Parent Node
+        elementDiv.appendChild(elementP); // Append P Element to it's Parent Div Node
+
+
+    </script>
+</body>
+</html>
