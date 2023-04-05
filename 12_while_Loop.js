@@ -8,10 +8,10 @@ while (index<=10) {  // Condition
 
 
 console.log("===== Traversing  ====================");
-var arrayOfNumbers = [ 10, 20, 25, 15, 40, 45, 60, 40, 30, 22, 26 ];
+var arrayOfNumbers1 = [ 10, 20, 25, 15, 40, 45, 60, 40, 30, 22, 26 ];
 var index = 0;
-while (index<=arrayOfNumbers.length) {
-    console.log(arrayOfNumbers[index]);
+while (index<arrayOfNumbers1.length) {
+    console.log(arrayOfNumbers1[index]);
     index++;
 }
 

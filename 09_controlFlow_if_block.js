@@ -1,5 +1,3 @@
-//sir can you Explain Return concept once Again shortly
-
 console.log(`----------------- if Block -------------------`);
 console.log(`starts`);
 var num = 10;
@@ -22,7 +20,7 @@ function checkEvenOrOdd(num) {
   if (num % 2 == 0) {
     return "EVEN";
   }
-  if (num % 2 == 1) {
+  if (num % 2 != 0) {
     return "ODD";
   }
 }

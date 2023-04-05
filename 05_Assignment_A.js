@@ -1,8 +1,4 @@
 console.log("--------------------------- Step 01 ---------------------------------------");
-var word1 = "JavaScript";
-var word2 = "Google Chrome";
-var word3 = "Developer Smart";
-
 function squareOfWordLength(str1){
     var wordLength = str1.length;
     var sqlength = wordLength*wordLength;
@@ -10,9 +6,9 @@ function squareOfWordLength(str1){
     
   console.log(`the Word is "${str1}" and Length of the Word is "${wordLength}" Square of Length is "${sqlength}"`);
 }
-squareOfWordLength(word1);
-squareOfWordLength(word2);
-squareOfWordLength(word3);
+squareOfWordLength("JavaScript");
+squareOfWordLength("Google Chrome");
+squareOfWordLength("Developer Smart");
 
 console.log("--------------------------- Step 02 ---------------------------------------");
 var givenString = "I am Angular Developer";

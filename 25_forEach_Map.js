@@ -6,6 +6,6 @@ mapOfNumbers.set("One", 11);
 mapOfNumbers.set("Five", 5);
 mapOfNumbers.set("Six", 6);
 
-mapOfNumbers.forEach((key, value) => {
+mapOfNumbers.forEach((value, key) => {
     console.log(key,value);
 });

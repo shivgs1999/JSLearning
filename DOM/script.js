@@ -67,20 +67,20 @@ function show() {
 }
 
 const isEvenButton = document.querySelector("#isEvenButton");
-isEvenButton.addEventListener("click", () => {
-     const inputValue = prompt("Please Enter Number To Check", 0);
-     console.log(inputValue);
-     const result = inputValue%2 == 0 ? true : false;
-     if (result != "Number" || result == undefined || result == null || result == "string" ) {
-        return alert("Given Number is Not A Number")
-        
-     }
-     if (result) {
-        alert("Given Number is Even")
-     } else{
-        alert("Given Number is Odd")
-     }
-}); 
+isEvenButton.addEventListener('click', () => {
+    const inputValue = prompt("Please enter number to check..", 0);
+    const givenNum = +inputValue;
+    if (inputValue==null || isNaN(givenNum) || givenNum<0) {
+        alert("Invalid value");
+    }else{
+        const result = inputValue%2==0 ? true : false;
+        if(result){
+            alert("Given Number is Even");
+        }else{
+            alert("Given number is Odd");
+        }
+    }
+} );
 
 
 const isPrimaryNumber = document.querySelector("#isPrimeNumber");
@@ -97,3 +97,10 @@ function primeNo(num) {
  let result = primeNo(inputValues);
  console.log(result);
 });  
+
+
+const confirmElement = document.querySelector("#confirm");
+confirmElement.addEventListener("click", () => {
+   const result = confirm("Are you Sure ?");
+   console.log(result);
+});

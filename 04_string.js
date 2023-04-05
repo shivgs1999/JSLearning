@@ -26,7 +26,7 @@ console.log("--------------------------- .replace() Method ---------------------
 var replaceResult = greet.replace("Morning","Evening")
 console.log(`Original String : ${greet}`);
 console.log(`After Using Replace Method String: ${replaceResult}`);
-//This Method Replace a Specified Value with anther value in String.it replace only First MAtch.if you want to replace All matches then use (/Morning/g,"EVEning").which is Global MAtch.
+//This Method Replace a Specified Value with anther value in String.it replace only First MAtch.if you want to replace All matches then use (/Morning/g,"Evening").which is Global MAtch.
 console.log(`~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~`);
 
 console.log("---------------- .toUpperCase / .toLowerCase() Method ---------------");

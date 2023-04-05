@@ -2,13 +2,12 @@ function weekDay(day){
     switch (day) {
      case 1:
          console.log(`Day of the week is ${day}: Monday`);
-         console.log("Monday is the start day of the week");
          break;
      case 2: 
          console.log(`Day of the week is ${day}: Tuesday`);
          break;
      case 3: 
-         console.log(`Day of the week is ${day}: Wed`);
+         console.log(`Day of the week is ${day}: Wednesday`);
          break; 
      case 4:
          console.log(`Day of the week is ${day}: Thursday`);
@@ -25,9 +24,7 @@ function weekDay(day){
      default:
          console.log(`Invalid day : ${day}`);
          break;
-    }
-    console.log(`End of Switch case for "${day}"`);
- 
+    } 
  }
  weekDay(3); // 1 to 7, invalid
  weekDay(7); 
@@ -36,3 +33,4 @@ function weekDay(day){
  weekDay(100); 
  weekDay(null);
  weekDay(undefined);
+ weekDay(1); 

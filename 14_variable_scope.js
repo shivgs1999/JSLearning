@@ -51,9 +51,10 @@ console.log(result);
 
 var fullName = "MS Dhoni";
 if (true) {
+    var age = 37;
     console.log("Hello", age);
 } else {
-    var age = 37;
+   
 }
 console.log(age);
 

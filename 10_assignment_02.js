@@ -12,10 +12,10 @@ function tcsInterviewCheck(gradScore,hscScore,sscScore,candidateName){
         var result = console.log(`Dear "${candidateName}" This is Invalid Data sscScore: "${sscScore}" Please Provide valid Data`);  
         return result;
     }
-   // if (typeof candidateName !== "String" || candidateName.length <= 10  ) {
-     //   var result = console.log(`This is Invalid Data candidateName: "${candidateName}" Please Provide valid Data`);  
-    //    return result;
-   // }
+   if (typeof candidateName !== "String" || isNaN(candidateName)  ) {
+       var result = console.log(`This is Invalid Data candidateName: "${candidateName}" Please Provide valid Data`);  
+       return result;
+   }
 //-----------------------------------------------------------------------------------------------------------------------
     if (gradScore >= 70 || hscScore >= 80 || sscScore >90) {
         var result = console.log(`Congrats "${candidateName}" you are Eligible for TCS Interview`);
@@ -32,3 +32,4 @@ function tcsInterviewCheck(gradScore,hscScore,sscScore,candidateName){
  tcsInterviewCheck(0,79,50,"Rohit");
  tcsInterviewCheck(60,'Eighty',50,"Swati"); 
  tcsInterviewCheck(60,68,-50,"Virat"); 
+ tcsInterviewCheck(80,86,90,null);
