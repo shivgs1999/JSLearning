@@ -38,3 +38,24 @@ console.log(result);
 var result = lastWordCharCount("Hard work and commitment is the key of success");
 console.log(result);
 
+
+console.log(`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Counting Vowels from Array ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`);
+
+
+const names = [`Shivam`, `Tushar`, `Rupesh`, `Gajanan` ];
+const countVowels = (names = []) => {
+   const vowels = 'aeiouAEIOU';
+   const isVowel = vovel => vowels.includes(vovel);
+   let count = 0;
+   names.forEach(element => {
+      for(let i = 0; i < element.length; i++){
+         if(isVowel(element[i])){
+            count++;
+         };
+      };
+   });
+   return `Total Vowels in the given Array: ${names} is: ${count}`;
+};
+let resultVowels = countVowels(names)
+console.log(resultVowels);
+
