@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Add Name </title>
+</head>
+
+<body id="body">
+    <br><br><br>
+    <button type="button" id="button"> My Name </button>
+    <div class="name">
+
+    </div>
+    <script>
+        const selectHobbies = document.querySelector("#button");
+        selectHobbies.addEventListener("click", () => {
+            const inputValue = prompt("Enter your Name", "name");
+            console.log(inputValue);
+        });
+    </script>
+</body>
+
+</html>

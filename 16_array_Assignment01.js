@@ -10,7 +10,8 @@ console.error(`First Element of the Given Array is `);
 console.log(valueAtFirstIndex);
 
 console.log(`~~~~~~~~~~~~~~~~~~~~ Step 02 ~~~~~~~~~~~~~~~~~~~~`);
-const valueAtLastIndex = arraySeasonalFruits[4];
+const countAtLastIndex = arraySeasonalFruits.length-1;
+let valueAtLastIndex = arraySeasonalFruits[countAtLastIndex]
 console.error(`Last Element of the Given Array is `);
 console.log(valueAtLastIndex);
 
