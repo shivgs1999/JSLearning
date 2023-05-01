@@ -71,3 +71,16 @@ let result6 = oddEven(7);
 console.log(result6);
 
 
+console.log(`6. Write A program for Fabonissi Series` );
+function fabSeries(num) {
+   let first = 0;
+   let second = 1;
+   let next = 0;
+   for (let index = 0; index <= num; index++) {
+    console.log(first);
+    next = first + second;
+    first = second;
+    second = next;
+   }
+}
+fabSeries(10)
